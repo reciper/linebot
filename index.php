@@ -24,9 +24,9 @@ $replyMessage = null;
 // メッセージタイプが文字列の場合
 if ($event->message->type == "text") {
     //とりあえず今回は少し加工するだけ
-    $replyMessage = "こんにちわ〜〜";
+    $replyMessage = "testなので ".$event->message->text."　と言われても返せません。またのご利用をお待ちしております。";
 } else {
-    $replyMessage = "テキストしかわからない";
+    $replyMessage = "メッセージを送ってください";
 }
 
 // メッセージ作成
