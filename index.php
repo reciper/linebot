@@ -23,7 +23,7 @@ if ($event->type != "message")
 $replyMessage = null;
 // メッセージタイプが文字列の場合
 if ($event->message->type == "text") {
-    $replyMessage = "testなので　".$event->message->text."　と言われても返せません。またのご利用をお待ちしております。";
+    $replyMessage = "あなたが送って来たメッセージは　".$event->message->text."　です。　";
 } else {
     $replyMessage = "メッセージを送ってください";
 }
